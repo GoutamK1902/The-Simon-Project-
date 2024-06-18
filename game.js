@@ -17,7 +17,7 @@ let level = 0;
 
 // Start the game when the "a" key is pressed
 $(document).keydown((event) => {
-  if (!gameStart && event.key === "a") {
+  if (!gameStart) {
     h1Text.text("Level " + level);
     nextSequence();
     gameStart = true;
