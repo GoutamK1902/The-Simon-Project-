@@ -24,7 +24,7 @@ let level = 0;
 //   }
 // });
 
-buttons[0].("click",(event) => {
+buttons.("click",(event) => {
   if (!gameStart && event) {
     h1Text.text("Level " + level);
     nextSequence();
